@@ -33,6 +33,58 @@ const Header = () => {
           </Row>
         </Container>
       </div>
+
+      {/* ====== header middle ====== */}
+      <div className="header__middle">
+        <Container>
+          <Row>
+            <Col lg="4" md="3" sm="4">
+              <div className="logo">
+                <h1>
+                  <Link to="/home" className="d-flex align-items-center gap-3">
+                    <i class="ri-car-line"></i>
+                    <span>
+                      Rent Car <br /> Service
+                    </span>
+                  </Link>
+                </h1>
+              </div>
+            </Col>
+
+            <Col lg="3" md="3" sm="4">
+              <div className="header__location d-flex align-items-center gap-2">
+                <span>
+                  <i class="ri-earth-line"></i>
+                </span>
+                <div className="header__location-content">
+                  <h4>Bangladesh</h4>
+                  <h6>Sylhet City, Bangladesh</h6>
+                </div>
+              </div>
+            </Col>
+
+            <Col lg="3" md="3" sm="4">
+              <div className="header__location d-flex align-items-center gap-2">
+                <span>
+                  <i class="ri-time-line"></i>
+                </span>
+                <div className="header__location-content">
+                  <h4>Sunday to Friday</h4>
+                  <h6>10am - 7pm</h6>
+                </div>
+              </div>
+            </Col>
+
+            <Col lg="2" md="3" sm="0" className="text-end">
+              <button className="header__btn btn ">
+                <Link to="/contact">
+                  <i class="ri-phone-line"></i> Request a call
+                </Link>
+              </button>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </header>
   );
 };
